@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy";
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#left {
+  width: 40%;
+  height: 100%;
+  /* background-color: yellow; */
+  position: relative;
+  /* for textCenter centering */
+}
+
+#right {
+  width: 60%;
+  height: 100%;
+}
+
+#upper {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+#upperLeft {
+  width: 50%;
+  height: 100%;
+  /* background-color: rgba(235, 188, 235, 0.808); */
+  background-image: url(https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhY3R1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+#upperRight {
+  width: 50%;
+  height: 100%;
+  /* background-color: rgba(139, 0, 139, 0.466); */
+  background-image: url(https://images.unsplash.com/photo-1517281749396-564b95a206c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGVlbGVkJTIwb3JhbmdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+}
+
+#lower {
+  /* background-color: rgb(144, 192, 211); */
+  width: 100%;
+  height: 50%;
+  background-image: url(https://plus.unsplash.com/premium_photo-1667543228378-ec4478ab2845?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80);
+  background-size: cover;
+  background-position: center;
+}
+
+#nav {
+  display: flex;
+  margin: 2% 3%;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+#navLink a {
+  padding-right: 20px;
+  color: black;
+}
+
+#navLink {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+}
+
+#left #textCenter {
+  /* for text centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textCenter h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+
+#textCenter p {
+  opacity: 50%;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 5px 0 20px 0;
+}
+
+#textCenter a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 6px;
+  font-weight: 600;
+  opacity: 0.6;
+  font-family: "Gilroy";
+}
+
+@media (max-width: 500px) {
+  #main {
+    flex-direction: column;
+  }
+
+  #right {
+    width: 100%;
+    margin-top: 10%;
+  }
+
+  #left {
+    width: 100%;
+    
+  }
+  #textCenter{
+    margin-top: 8%;
+  }
+}
